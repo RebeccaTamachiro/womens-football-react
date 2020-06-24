@@ -1,0 +1,21 @@
+.Scores {
+  background-color: #ff3366;
+}
+
+.Scores .card {
+  display: flex;
+  align-items: center;
+}
+
+.Scores .badgeWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Scores .card-image {
+  max-width: 7vw;
+}
+
+.Scores .goals {
+  font-size: 3vw;
+}

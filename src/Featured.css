@@ -1,0 +1,14 @@
+.Featured .interactiveSearch {
+  min-height: 390px;
+  max-width: unset;
+}
+
+.Featured .mainImage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Featured .card {
+  min-width: 300px;
+}

@@ -1,0 +1,11 @@
+.News {
+  color: yellow;
+}
+
+.News .headline {
+  color: black;
+}
+
+.News .summary {
+  color: black;
+}
