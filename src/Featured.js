@@ -17,38 +17,38 @@ export default function Featured() {
         <div className="interactiveSearch col-4">
           <h2>FIFA World Cup 2019</h2>
           <div className="card-deck ml-0">
-            <div class="card col mb-3 ml-2">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="..." />
+            <div className="card col mb-3 ml-2">
+              <div className="row no-gutters">
+                <div className="col-md-4">
+                  <img src="..." className="card-img" alt="..." />
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card</p>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <p className="card-text">This is a wider card</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card col mb-3 ml-2">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="..." />
+            <div className="card col mb-3 ml-2">
+              <div className="row no-gutters">
+                <div className="col-md-4">
+                  <img src="..." className="card-img" alt="..." />
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card</p>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <p className="card-text">This is a wider card</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card col mb-3 ml-2">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="..." />
+            <div className="card col mb-3 ml-2">
+              <div className="row no-gutters">
+                <div className="col-md-4">
+                  <img src="..." className="card-img" alt="..." />
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card</p>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <p className="card-text">This is a wider card</p>
                   </div>
                 </div>
               </div>
