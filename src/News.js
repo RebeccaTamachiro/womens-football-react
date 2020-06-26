@@ -1,20 +1,18 @@
 import React, { useState } from "react";
-import "./News.css";
 import axios from "axios";
-import mainImage from "./MainImage.jpg";
+
+import NewsCard from "./NewsCard";
+
+import "./News.css";
 
 export default function News() {
   const apiKey = "cbaf633b9a374a5588ed66f4872f2b73";
-  const [newsCardData, setNewsCardData] = useState({ ready: false });
+  const [loaded, setLoaded] = useState(false);
+  const [newsCardData, setNewsCardData] = useState(null);
 
   function handleResponse(response) {
-    setNewsCardData({
-      ready: true,
-      newsImage: response.data.articles[3].urlToImage,
-      newsTitle: response.data.articles[3].title,
-      newsDescription: response.data.articles[3].description,
-      newsLink: response.data.articles[3].url,
-    });
+    setNewsCardData(response.data);
+    setLoaded(true);
   }
 
   function getNewsFeed() {
@@ -22,56 +20,14 @@ export default function News() {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  if (newsCardData.ready) {
+  if (loaded) {
     return (
       <div className="News">
         <div className="row mx-2">
           <div className="card-deck">
-            <div className="card my-2">
-              <img
-                src={newsCardData.newsImage}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title headline">
-                  {newsCardData.newsTitle}
-                </h5>
-                <p className="card-text summary">
-                  {newsCardData.newsDescription}
-                </p>
-                <a
-                  href={newsCardData.newsLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-            <div className="card my-2">
-              <img src={mainImage} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title headline">Card title</h5>
-                <p className="card-text summary">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-
-            <div className="card my-2">
-              <img src={mainImage} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title headline">Card title</h5>
-                <p className="card-text summary">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>{" "}
-              </div>
-            </div>
+            <NewsCard data={newsCardData.articles[3]} />
+            <NewsCard data={newsCardData.articles[2]} />
+            <NewsCard data={newsCardData.articles[7]} />
           </div>
         </div>
       </div>

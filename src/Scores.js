@@ -1,7 +1,18 @@
 import React from "react";
+import axios from "axios";
 import "./Scores.css";
 
 export default function Scores() {
+  //fetch("https://v2.api-football.com/predictions?fixture=198772", {
+  //method: "GET",
+  //headers: {
+  //"x-rapidapi-host": "v2.api-football.com",
+  //"x-rapidapi-key": "b82f9ac1c7378dc800e3963a1de20687",
+  //},
+  //}).then((response) => {
+  //  console.log(response);
+  //});
+
   return (
     <div className="Scores">
       <div className="row mx-2">
