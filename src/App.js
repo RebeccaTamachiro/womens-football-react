@@ -1,5 +1,4 @@
 import React from "react";
-import Scores from "./Scores";
 import News from "./News";
 import Featured from "./Featured";
 
@@ -12,7 +11,6 @@ export default function App() {
         <h1>Women's Football Rocks!!</h1>
       </header>
       <Featured />
-      <Scores />
       <News />
       <footer className="App-footer">
         <small>Coded by Rebecca Tamachiro</small>

@@ -13,6 +13,7 @@ export default function News() {
   function handleResponse(response) {
     setNewsCardData(response.data);
     setLoaded(true);
+    console.log(response);
   }
 
   function getNewsFeed() {
@@ -23,11 +24,11 @@ export default function News() {
   if (loaded) {
     return (
       <div className="News">
-        <div className="row mx-2">
+        <div className="row mx-2 my-4">
           <div className="card-deck">
             <NewsCard data={newsCardData.articles[3]} />
             <NewsCard data={newsCardData.articles[2]} />
-            <NewsCard data={newsCardData.articles[7]} />
+            <NewsCard data={newsCardData.articles[19]} />
           </div>
         </div>
       </div>
