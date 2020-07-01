@@ -27,7 +27,7 @@ export default function News() {
           <div className="card-deck">
             <NewsCard data={newsCardData.articles[3]} />
             <NewsCard data={newsCardData.articles[2]} />
-            <NewsCard data={newsCardData.articles[19]} />
+            <NewsCard data={newsCardData.articles[5]} />
           </div>
         </div>
       </div>

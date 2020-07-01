@@ -8,6 +8,7 @@ import SearchedTeam from "./SearchedTeam";
 export default function Featured() {
   const [ready, setReady] = useState(false);
   const [fwwData, SetFwwData] = useState({});
+  const [teamInput, setTeamInput] = useState(null);
 
   function handleResponse(response) {
     SetFwwData({
@@ -20,8 +21,18 @@ export default function Featured() {
 
   function searchTeam(event) {
     event.preventDefault();
-    let apiUrl = "https://api.jsonbin.io/b/5ef77a472406353b2e0dc9b1";
+    let apiVariable = `${teamInput}`.toUpperCase();
+    let searchMapping = {
+      USA: "5ef77a472406353b2e0dc9b1",
+      "UNITED STATES": "5ef77a472406353b2e0dc9b1",
+    };
+
+    let apiUrl = `https://api.jsonbin.io/b/${searchMapping[apiVariable]}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleInput(event) {
+    setTeamInput(event.target.value);
   }
 
   if (ready) {
@@ -29,8 +40,8 @@ export default function Featured() {
       <div className="Featured interactiveSearch col-4">
         <SearchedTeam data={fwwData} />
         <p>Want to know how your team did?</p>
-        <form onClick={searchTeam}>
-          <input type="search" />
+        <form onSubmit={searchTeam}>
+          <input type="search" onChange={handleInput} />
           <input type="submit" value="Search" />
         </form>
       </div>
@@ -45,8 +56,8 @@ export default function Featured() {
           <StandingsCard ranking={2} />
         </div>
         <p>Want to know how your team did?</p>
-        <form onClick={searchTeam}>
-          <input type="search" />
+        <form onSubmit={searchTeam}>
+          <input type="search" onChange={handleInput} />
           <input type="submit" value="Search" />
         </form>
       </div>
