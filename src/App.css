@@ -17,10 +17,8 @@
   font-size: 4vw;
 }
 
-.App .interactiveSearch {
-  background-color: #f9f9fb;
-  margin: 0;
-  padding: 0;
+.App .mainImage {
+  object-fit: cover;
 }
 
 .App footer {

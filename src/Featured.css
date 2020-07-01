@@ -1,18 +1,12 @@
-.Featured .interactiveSearch {
-}
-
 .Featured .mainImage {
-  width: 100%;
+  width: 1012px;
+  height: 600px;
+  object-fit: cover;
   margin: 0;
   padding: 0;
 }
-
-.Featured .card {
-  min-width: 300px;
-}
-
-.Featured .card-img {
-  width: 70px;
-  height: 100px;
-  object-fit: contain;
+.Featured {
+  background-color: #f9f9fb;
+  margin: 0;
+  padding: 0;
 }

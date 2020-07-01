@@ -1,0 +1,9 @@
+.StandingsCard {
+  min-width: 300px;
+}
+
+.StandingsCard .card-img {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}

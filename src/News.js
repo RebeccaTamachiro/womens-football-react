@@ -13,7 +13,6 @@ export default function News() {
   function handleResponse(response) {
     setNewsCardData(response.data);
     setLoaded(true);
-    console.log(response);
   }
 
   function getNewsFeed() {
