@@ -1,0 +1,10 @@
+.Info {
+  margin: 30px auto;
+}
+
+.Info p {
+  color: white;
+  font-size: 1.25rem;
+  padding: 20px 20px;
+  margin: 0;
+}

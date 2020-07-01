@@ -33,40 +33,51 @@ export default function Featured() {
             <div className="card-deck ml-0">
               <div className="card col mb-3 ml-2">
                 <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="..." className="card-img" alt="..." />
+                  <div className="col-md-3 logo-wrapper">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/United_States_Soccer_Federation_logo_2016.svg/1200px-United_States_Soccer_Federation_logo_2016.svg.png"
+                      className="card-img"
+                      alt="Team logo"
+                    />
                   </div>
-                  <div className="col-md-8">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <p className="card-text">This is a wider card</p>
+                      <h5 className="card-title headline">Champions</h5>
+                      <p className="card-text">Description</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="card col mb-3 ml-2">
                 <div className="row no-gutters">
-                  <div className="col-md-4">
+                  <div className="col-md-3 logo-wrapper">
                     <img
-                      src="https://docs.google.com/drawings/d/e/2PACX-1vTBLsPvzqYVgImUJ1PtkyxO8xQ1oE_On8dUFueiye_a3rhszbTgjkkWseh1eEyMYsCVTdWviHfgXhOC/pub?w=644&amp;h=729"
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Netherlands_national_football_team_logo.svg/180px-Netherlands_national_football_team_logo.svg.png"
                       className="card-img"
                       alt="..."
                     />
                   </div>
-                  <div className="col-md-8">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <p className="card-text">This is a wider card</p>
+                      <h5 className="card-title headline">Runners-up</h5>
+                      <p className="card-text">Description</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="card col mb-3 ml-2">
                 <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="..." className="card-img" alt="..." />
+                  <div className="col-md-3 logo-wrapper">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Swedish_Football_Association_crest.svg/1200px-Swedish_Football_Association_crest.svg.png"
+                      className="card-img"
+                      alt="..."
+                    />
                   </div>
-                  <div className="col-md-8">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <p className="card-text">This is a wider card</p>
+                      <h5 className="card-title headline">3rd Place</h5>
+                      <p className="card-text">Description</p>
                     </div>
                   </div>
                 </div>

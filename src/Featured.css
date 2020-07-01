@@ -10,3 +10,9 @@
 .Featured .card {
   min-width: 300px;
 }
+
+.Featured .card-img {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
