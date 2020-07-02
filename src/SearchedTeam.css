@@ -1,0 +1,16 @@
+.SearchedTeam .card-img {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.SearchedTeam .nameWrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.SearchedTeam .card-title {
+  font-size: 1.75rem;
+}

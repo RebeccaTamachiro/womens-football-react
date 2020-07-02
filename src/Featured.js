@@ -22,7 +22,10 @@ export default function Featured() {
     let searchMapping = {
       USA: "5ef77a472406353b2e0dc9b1",
       "UNITED STATES": "5ef77a472406353b2e0dc9b1",
-      FRANCE: "5efd8ba10bab551d2b6a8523",
+      FRANCE: "5efe29b2bb5fbb1d2562f1a6",
+      ENGLAND: "5efe2ddabb5fbb1d2562f37f",
+      GERMANY: "5efe32430bab551d2b6ad1bc",
+      ITALY: "5efe3afe7f16b71d48aa1d13/1",
     };
 
     let apiUrl = `https://api.jsonbin.io/b/${searchMapping[apiVariable]}`;
@@ -36,6 +39,7 @@ export default function Featured() {
   if (ready) {
     return (
       <div className="Featured interactiveSearch col-4">
+        <h2>FIFA World Cup 2019</h2>
         <SearchedTeam data={fwwData} />
         <p>Want to know how your team did?</p>
         <form onSubmit={searchTeam}>
