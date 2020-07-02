@@ -11,10 +11,7 @@ export default function Featured() {
   const [teamInput, setTeamInput] = useState(null);
 
   function handleResponse(response) {
-    SetFwwData({
-      name: response.data.nationTeam,
-      description: response.data.summary,
-    });
+    SetFwwData(response.data);
     console.log(response.data);
     setReady(true);
   }
@@ -25,6 +22,7 @@ export default function Featured() {
     let searchMapping = {
       USA: "5ef77a472406353b2e0dc9b1",
       "UNITED STATES": "5ef77a472406353b2e0dc9b1",
+      FRANCE: "5efd8ba10bab551d2b6a8523",
     };
 
     let apiUrl = `https://api.jsonbin.io/b/${searchMapping[apiVariable]}`;
