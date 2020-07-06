@@ -49,8 +49,15 @@ export default function Footer() {
         <p>
           This website is open-sourced and has been coded mainly for practice by
           Rebecca Tamachiro. Please feel free to check out other projects on
-          Github, reach out to talk about those and, of course, spread the good
-          word about women who rock, playing the sport that they love.
+          <a
+            href="https://github.com/RebeccaTamachiro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          , reach out to talk about those and, of course, spread the good word
+          about women who rock, playing the sport that they love.
         </p>
       </div>
     </footer>
