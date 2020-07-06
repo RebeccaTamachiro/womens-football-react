@@ -1,8 +1,9 @@
 import React from "react";
-import News from "./News";
+
 import Info from "./Info";
 import Featured from "./Featured";
 import mainImage from "./MainImage.jpg";
+import News from "./News";
 
 import "./App.css";
 import Footer from "./Footer";

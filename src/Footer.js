@@ -48,7 +48,7 @@ export default function Footer() {
       <div className="col-md-8 description">
         <p>
           This website is open-sourced and has been coded mainly for practice by
-          Rebecca Tamachiro. Please feel free to check out other projects on
+          Rebecca Tamachiro. Please feel free to check out other projects on{" "}
           <a
             href="https://github.com/RebeccaTamachiro"
             target="_blank"
