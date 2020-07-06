@@ -23,24 +23,24 @@ export default function News() {
   if (loaded) {
     return (
       <div className="News">
-        <div className="row mx-4 my-4">
+        <div className="row mx-4 mt-4 mb-2">
           <div className="card-deck">
-            <NewsCard data={newsCardData.articles[3]} />
+            <NewsCard data={newsCardData.articles[0]} />
             <NewsCard data={newsCardData.articles[2]} />
             <NewsCard data={newsCardData.articles[5]} />
           </div>
-          <p className="source">
-            *This section is fecthed from{" "}
-            <a
-              href="https://newsapi.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="newsApiLink"
-            >
-              NewsAPI
-            </a>
-          </p>
         </div>
+        <p className="source mr-5 pb-3">
+          *This section is fecthed from{" "}
+          <a
+            href="https://newsapi.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="newsApiLink"
+          >
+            NewsAPI
+          </a>
+        </p>
       </div>
     );
   } else {

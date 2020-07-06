@@ -17,7 +17,11 @@ export default function NewsCard(props) {
   if (cardMathcing.ready) {
     return (
       <div className="NewsCard card my-4">
-        <img src={cardMathcing.newsImage} className="card-img-top" alt="..." />
+        <img
+          src={cardMathcing.newsImage}
+          className="card-img-top newsImage"
+          alt="..."
+        />
         <div className="card-body">
           <h5 className="card-title headline">{cardMathcing.newsTitle}</h5>
           <p className="card-text summary">{cardMathcing.newsDescription}</p>

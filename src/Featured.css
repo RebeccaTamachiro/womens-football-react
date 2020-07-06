@@ -26,3 +26,9 @@
   min-width: 80px;
   max-width: 95px;
 }
+
+.Featured .searchForm {
+  min-width: 170px;
+  max-width: 225px;
+  margin: 0 auto;
+}
