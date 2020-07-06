@@ -3,7 +3,7 @@ import "./Info.css";
 
 export default function Info() {
   return (
-    <div className="Info px-2 py-2">
+    <div className="Info px-5 py-2">
       <p>
         {" "}
         The history of women's football has seen major competitions being

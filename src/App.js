@@ -5,6 +5,7 @@ import Featured from "./Featured";
 import mainImage from "./MainImage.jpg";
 
 import "./App.css";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -16,15 +17,13 @@ export default function App() {
         <img
           src={mainImage}
           alt="Women soccer players celebrating"
-          className="col-8 my-0 mx-0 py-0 px-0 mainImage"
+          className="col-md-8 my-0 mx-0 py-0 px-0 mainImage"
         />{" "}
         <Featured />
       </div>
       <Info />
       <News />
-      <footer className="App-footer">
-        <small>Coded by Rebecca Tamachiro</small>
-      </footer>
+      <Footer />
     </div>
   );
 }

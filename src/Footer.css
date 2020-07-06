@@ -1,0 +1,14 @@
+.Footer {
+  color: #f9f9fb;
+  text-align: left;
+}
+
+.Footer .externalLinks {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.Footer .description {
+  display: flex;
+  align-items: center;
+}

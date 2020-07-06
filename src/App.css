@@ -14,13 +14,8 @@
 .App h1 {
   color: #ffc107;
   text-align: left;
-  font-size: 4vw;
 }
 
 .App .mainImage {
   object-fit: cover;
-}
-
-.App footer {
-  color: #c5d4ea;
 }

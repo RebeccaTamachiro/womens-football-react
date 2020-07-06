@@ -1,11 +1,12 @@
 .News {
-  color: back;
+  background-color: #ec0d45;
 }
 
-.News .headline {
-  color: black;
+.News .source {
+  color: #f9f9fb;
 }
 
-.News .summary {
-  color: black;
+.News .newsApiLink {
+  color: #f9f9fb;
+  text-decoration: underline;
 }

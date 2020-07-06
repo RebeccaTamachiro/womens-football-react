@@ -2,8 +2,16 @@
   min-width: 300px;
 }
 
+.StandingsCard .logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .StandingsCard .card-img {
   width: 70px;
   height: 100px;
   object-fit: contain;
+  margin: 0 auto;
 }

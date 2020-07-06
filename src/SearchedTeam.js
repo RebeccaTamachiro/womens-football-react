@@ -32,7 +32,7 @@ export default function SearchedTeam(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            See with your own eyes
+            See for yourself
           </a>
         </div>
       </div>

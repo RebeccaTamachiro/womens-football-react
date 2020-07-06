@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./NewsCard.css";
 
 export default function NewsCard(props) {
   const [cardMathcing, setCardMatching] = useState({});
@@ -15,7 +16,7 @@ export default function NewsCard(props) {
 
   if (cardMathcing.ready) {
     return (
-      <div className="NewsCard card my-2">
+      <div className="NewsCard card my-4">
         <img src={cardMathcing.newsImage} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title headline">{cardMathcing.newsTitle}</h5>
