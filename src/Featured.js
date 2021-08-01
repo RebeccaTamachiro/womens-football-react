@@ -12,7 +12,6 @@ export default function Featured() {
 
   function handleResponse(response) {
     SetFwwData(response.data);
-    console.log(response.data);
     setReady(true);
   }
 
